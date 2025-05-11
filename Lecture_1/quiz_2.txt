@@ -1,0 +1,80 @@
+name : yahya yasser 
+phone (WP) : 01028822285
+
+Beginner Level
+1.HTML: HyperText Markup Language.
+2. Using the <a> tag
+3. <img> tag.
+4. <ul> tag.
+5. <br> tag.
+6. <b> and <strong>
+7. <i> and <em>
+8. <!-- This is a comment -->
+9. <h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+10. The alt attribute provides alternative text for an image if it cannot be displayed and improves accessibility.
+
+
+Intermediate Level
+11. The <head> contains metadata like title, links to CSS, not displayed on the page.
+12. Using the <link> tag: <link rel="stylesheet" href="styles.css">
+13. <ul> creates unordered lists (bullet point) |  <ol> creates ordered lists (numbered).
+14.
+  <ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+15. <!-- Your comment here -->
+16. <h1 style="text-align: center;">Centered Heading</h1>
+17. contains description, keywords
+18.
+  <table border="1">
+    <tr>
+      <td>Row 1, Col 1</td>
+      <td>Row 1, Col 2</td>
+    </tr>
+    <tr>
+      <td>Row 2, Col 1</td>
+      <td>Row 2, Col 2</td>
+    </tr>
+  </table>
+19. by blank targetting : <a href="https://example.com" target="_blank">Open in new tab</a>
+20.Error: Missing closing tag for <title>
+21.
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+  </form>
+
+
+Advanced Level
+22. The DOM (Document Object Model) : It represents the page structure as a tree of objects that can be manipulated with JavaScript.
+23. The <!DOCTYPE> declaration defines the HTML version.
+24. Semantic HTML uses meaningful tags (<article>, <section>, <nav>, etc.) to improve readability, accessibility, and SEO.
+25.
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+26. don't know
+27.
+    <section>: A thematic grouping of content
+    <article>: don't know
+    <aside>: Content related to the main content (sidebar)
+
+28.
+  <a href="#section1">Go to Section</a>
+  <h2 id="section1">Section 1</h2>
+
+29. 
+  <header> contains introductory content or navigation. 
+  <footer> contains footer info like contact, copyright, policy.
+30.
+    Block-level: takes full width (<div>, <p>, <h1>)
+    Inline: flows within text (<span>, <a>, <strong>)
+
+31. <html lang="en"> for english 
+32. The <label> tag is used in forms to define labels for inputs, improving accessibility and usability.
