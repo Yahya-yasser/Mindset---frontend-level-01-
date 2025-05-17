@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style>
+    body {
+      background-color: #e6f2ea;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .contact-form {
+      background-color: white;
+      border-radius: 12px;
+      padding: 30px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding-left:10px;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .radio-group label,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .form-group textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 15px;
+      margin-top: 5px;
+    }
+
+    .radio-group label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: normal;
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 15px 0;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background-color: #007a5c;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #00614c;
+    }
+  </style>
+</head>
+<body>
+  <form class="contact-form" id="contactForm">
+    <h2>Contact Us</h2>
+
+    <div class="form-group">
+      <label>First Name *</label>
+      <input type="text" name="firstName" required />
+    </div>
+
+    <div class="form-group">
+      <label>Last Name *</label>
+      <input type="text" name="lastName" required />
+    </div>
+
+    <div class="form-group">
+      <label>Email Address *</label>
+      <input type="email" name="email" required />
+    </div>
+
+    <div class="form-group">
+      <label>Query Type *</label>
+      <div class="radio-group">
+        <label><input type="radio" name="queryType" value="General" required /> General Enquiry</label>
+        <label><input type="radio" name="queryType" value="Support" /> Support Request</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Message *</label>
+      <textarea name="message" required></textarea>
+    </div>
+
+    <div class="checkbox-group">
+      <input type="checkbox" name="consent" required />
+      <label>I consent to being contacted by the team *</label>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert("Form submitted successfully!");
+    });
+  </script>
+</body>
+</html>
