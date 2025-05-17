@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(0, 0%, 12%);
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.location {
+  color: hsl(75, 94%, 57%);
+  font-size: 14px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.bio {
+  font-size: 14px;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.links .btn {
+  display: block;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.links .btn:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
