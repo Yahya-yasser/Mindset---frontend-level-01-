@@ -1,0 +1,290 @@
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 100%);
+    background: hsl(0, 0%, 98%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    position: relative;
+    z-index: 2;
+}
+
+nav img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: white;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    display: none; 
+    border-radius: 5px;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul .dropdown-menu {
+    top: 40px;
+    left: 0;
+}
+
+.hero {
+    position: relative;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-bg img {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero-content {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary {
+    background-color: hsl(13, 100%, 72%);
+    color: white;
+}
+
+.secondary {
+    background-color: white;
+    color: hsl(13, 100%, 72%);
+    border: 1px solid hsl(13, 100%, 72%);
+}
+
+.features {
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.centered-title {
+    text-align: center;
+    font-size: 24px;
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 40px;
+}
+
+.designed-title {
+    color: hsl(208, 49%, 24%);
+}
+
+.feature-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.feature-text {
+    flex: 1;
+    color: hsl(208, 49%, 24%);
+    padding-right: 20px;
+}
+
+.feature-image {
+    flex: 1;
+    max-width: 50%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.infrastructure-container {
+    display: flex;
+    height: 250px;
+    align-items: center;
+    justify-content: space-between;
+    background: hsl(237, 23%, 32%);
+    padding: 60px 10%;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+.infrastructure-text p {
+    color: hsl(0, 0%, 100%);
+}
+
+.tooling-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 60px 0;
+}
+
+.tooling-text h2,
+.tooling-text p {
+    color: hsl(208, 49%, 24%);
+}
+
+.tooling-image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    object-position: 25% center;
+}
+
+footer {
+    background: hsl(237, 17%, 21%);
+    color: hsl(240, 2%, 79%);
+    padding: 40px 10%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-column img {
+    height: 40px;
+}
+
+.footer-column h4 {
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: hsl(240, 2%, 79%);
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .feature-container,
+    .infrastructure-container,
+    .tooling-container,
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-text {
+        padding-right: 0;
+        color: hsl(208, 49%, 24%);
+    }
+
+    .feature-image {
+        max-width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
